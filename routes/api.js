@@ -118,7 +118,7 @@ module.exports = function (app) {
         return
       }
 
-      res.json('delete successfully')
+      res.json('delete successful')
     });
   
 };

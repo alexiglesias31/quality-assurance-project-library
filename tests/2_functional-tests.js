@@ -206,7 +206,7 @@ suite('Functional Tests', function () {
               .end(function (err, res) {
                 assert.equal(res.status, 200);
                 assert.isString(res.body, 'response should be an object');
-                assert.equal(res.body, 'delete successfully', 'Delete successfully');
+                assert.equal(res.body, 'delete successful', 'Delete successfully');
                 done();
               });
           });
@@ -219,7 +219,7 @@ suite('Functional Tests', function () {
           .end(function (err, res) {
             assert.equal(res.status, 200);
             assert.isString(res.body, 'response should be an object');
-            assert.equal(res.body, 'no book exists', 'Delete successfully');
+            assert.equal(res.body, 'no book exists', 'No book because invalid ID');
             done();
           });
       });
